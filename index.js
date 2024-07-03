@@ -62,6 +62,9 @@ function displayTasks() {
 }
 
 taskForm.addEventListener('submit', function (e) {
+  const name = document.getElementById('taskName')
+  const description = document.getElementById('description')
+  const date = document.getElementById('duoDate')
   e.preventDefault();
   newTask = {
     name: name.value,
@@ -101,3 +104,11 @@ editForm.addEventListener('submit', function (e) {
 
 }
 )
+
+
+
+
+
+
+
+
